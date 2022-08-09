@@ -1,0 +1,167 @@
+@font-face {
+	font-family: "Digital-7";
+	src: url('./digital.ttf');
+}
+
+*
+{
+    letter-spacing: 2px;
+    font-family: "Digital-7";
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    user-select:none;
+}
+
+.inCar
+{
+    animation: animCar 2s ease-in;
+}
+
+.outCar
+{
+    animation: animCar2 2s ease-in;
+}
+
+.velocimeter
+{
+    position: absolute;
+    background:rgba(0, 0, 0, 0.685);
+    border-radius:5px;
+    -webkit-box-shadow:10px 9px 42px -5px rgba(0,0,0,0.52);
+    -moz-box-shadow:10px 9px 42px -5px rgba(0,0,0,0.52);
+    box-shadow:10px 9px 42px -5px rgba(0,0,0,0.397),0 0 10px rgba(0,0,0,0.4) inset;
+    color: #fff;
+    padding: 55px;
+    padding-right: 120px;
+    top: 81.4%;
+    left: 45%;
+    font-size: 230%;
+}
+
+.fuel
+{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    padding-right: 60px;
+    top: 88.7%;
+    left: 47.5%;
+}
+
+.fuel i
+{
+    position: absolute;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+    font-size: 110%;
+    bottom: 22%;
+    right: 60%;
+    color: rgb(255, 255, 255);
+}
+
+.fuel-level
+{
+    position: absolute;
+    color: #fff;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+    font-size: 130%;
+    bottom: 15%;
+    left: 50%;
+}
+
+.vehicle_state
+{
+    position: absolute;
+    background:rgba(0, 0, 0, 0.685);
+    border-radius:5px;
+    -webkit-box-shadow:10px 9px 42px -5px rgba(0,0,0,0.52);
+    -moz-box-shadow:10px 9px 42px -5px rgba(0,0,0,0.52);
+    box-shadow:10px 9px 42px -5px rgba(0,0,0,0.397),0 0 10px rgba(0,0,0,0.4) inset;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    padding-right: 60px;
+    top: 92.9%;
+    left: 1%;
+}
+
+.vehicle_state i
+{
+    position: absolute;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0 );
+    font-size: 110%;
+    bottom: 22%;
+    right: 70%;
+    color: #fff;
+}
+
+.state-level
+{
+    position: absolute;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+    font-size: 130%;
+    bottom: 15%;
+    right: 15%;
+    color: #fff;
+}
+
+.velocity
+{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.685);
+    text-shadow: 0px 0px 6px rgb(255, 255, 255);
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: -15%;
+}
+
+.gear
+{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.685);
+    text-shadow: 0px 0px 6px rgb(255, 255, 255);
+    bottom: 5%;
+    left: 22%;
+    white-space: nowrap;
+    font-size: 65%;
+}
+.marcha
+{
+    position: absolute;
+    background:rgba(0, 0, 0, 0.685);
+    border-radius: 5px;
+    -webkit-box-shadow:10px 9px 42px -5px rgba(0,0,0,0.52);
+    -moz-box-shadow:10px 9px 42px -5px rgba(0,0,0,0.52);
+    box-shadow:10px 9px 42px -5px rgba(0,0,0,0.397),0 0 10px rgba(0,0,0,0.4) inset;
+    color: #fff;
+    padding: 15px;
+    padding-right: 160px;
+    top: 91.9%;
+    left: 45%;
+    font-size: 240%;
+}
+
+@keyframes animCar {
+    0% {
+        bottom: 0px;
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 20px;
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+@keyframes animCar2 {
+    0% {
+        bottom: 20px;
+        left: 20%;
+        opacity: 1;
+    }
+    100% {
+        bottom: 0px;
+        left: 0;
+        opacity: 0;
+    }
+}
